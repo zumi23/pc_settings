@@ -1,0 +1,48 @@
+<WSL2のインストール手順>
+
+1.Linux用Windowsサブシステムを有効にする。
+
+powershell(※管理者として開く)
+================
+$ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+================
+
+
+2.仮想マシンの機能を有効にする。
+
+powershell
+================
+$ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+================
+
+コマンド実行後、マシンを再起動する。
+
+
+3.Linuxカーネル更新プログラムパッケージをダウンロードする。
+
+以下のリンクから、最新のパッケージをダウンロードする。
+
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+
+4.WSL2を既定のバージョンとして設定する。
+
+powershell
+================
+$ wsl --set-default-version 2
+================
+
+
+5.Microsoft StoreからLinuxディストリビューションをインストールする。
+
+
+6.Microsoft StoreからWindows Terminalインストールする。
+
+
+<できること>
+
+・Windows上でLinux環境を構築できる。
+
+・Windows上でLinuxコマンドを使用できる。
+
+・一つのウィンドウで複数のタブを開くことができる。
