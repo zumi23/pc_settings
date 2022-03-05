@@ -1,0 +1,46 @@
+<git configの設定>
+
+・ユーザ名の登録
+================
+$ git config --global user.name "user_name"
+================
+
+・メールアドレスの登録
+================
+$ git config --global user.email "XXXX@example.com"
+================
+
+・テキストエディタの登録(vim)
+================
+$ git config --global core.editor 'vim -c "set fenc=utf-8"'
+================
+
+・エイリアスの登録
+================
+$ git config --global alias.XX [command_name]
+================
+
+・マシン全体に反映
+================
+$ git config --system ~~~~
+================
+
+・ユーザごとに反映
+================
+$ git config --global ~~~~
+================
+
+・リポジトリごとに反映
+================
+$ git config ~~~~
+================
+
+・登録情報の確認
+================
+$ git config --list
+================
+
+・登録情報の削除
+================
+$ git config --unset ~~~~
+================
