@@ -1,0 +1,37 @@
+<エイリアスの設定>
+
+・設定を確認
+================
+$ git config --global alias.st status
+================
+
+・コミット
+================
+$ git config --global alias.cm commit
+================
+
+・ブランチの状態を確認
+================
+$ git config --global alias.br branch
+================
+
+・ブランチを削除
+================
+$ git config --global alias.brd "branch -d"
+================
+
+・チェックアウト
+================
+$ git config --global alias.co checkout
+================
+
+・ブランチを追加して、そのブランチへ移動
+================
+$ git config --global alias.cob "checkout -b"
+================
+
+
+
+================
+$ git config --global alias. "[command]"
+================
