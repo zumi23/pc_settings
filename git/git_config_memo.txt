@@ -44,3 +44,15 @@ $ git config --list
 ================
 $ git config --unset ~~~~
 ================
+
+・リモートリポジトリ（プライベート）を登録
+================
+$ git remote add origin https://[user_name]:[access_token]@github.com/[user_name]/[remote_repository].git
+================
+
+・リモートリポジトリを削除
+================
+$ git remote remove origin
+================
+
+
